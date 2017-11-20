@@ -181,7 +181,7 @@
   </div>
 </template>
 <script>
-  var fireballSize = 22; фаербола в пикселях
+  var fireballSize = 22; //фаербола в пикселях
   //скорость фаербола в зависимости от направления ветра
   var getFireballSpeed = function(left) {
    return left ? 5 : 2;
@@ -193,13 +193,13 @@
   var getWizardHeight = function() {
     return 1.337 * wizardWidth;
   };
-  //футкция задает положение мага по горизонтали
+  //функция задает положение мага по горизонтали
   var getWizardX =  function(width) {
-  return width 100%;
+    return width / 2 - (wizardWidth / 2) ;
   };
-  //футкция задает положение мага по вертикали
+  //функция задает положение мага по вертикали
   var getWizardY = function(height) {
-  return height 100%;
+  return height / 2;
   };
 </script>
 <script src="js/game.js"></script>
